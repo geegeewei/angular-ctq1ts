@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+}
+
+tr.demo-detail-row {
+  height: 0;
+}
+
+tr.demo-element-row:not(.demo-expanded):hover {
+  background: #f5f5f5;
+}
+
+tr.demo-element-row:not(.demo-expanded):active {
+  background: #efefef;
+}
+
+.demo-element-row td {
+  border-bottom-width: 0;
+}
