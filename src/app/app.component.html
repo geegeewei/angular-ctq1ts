@@ -19,6 +19,16 @@
     </td>
   </ng-container>
 
+  <ng-container matColumnDef="checkbox">
+    <th mat-header-cell *matHeaderCellDef>Must Send</th>
+    <td mat-cell *matCellDef="let element">
+      <mat-checkbox
+        style="padding-right: 10px"
+        class="example-margin"
+      ></mat-checkbox>
+    </td>
+  </ng-container>
+
   <!-- Name Column -->
   <ng-container matColumnDef="rule">
     <th mat-header-cell *matHeaderCellDef>Rule</th>
@@ -35,23 +45,56 @@
   <ng-container matColumnDef="freeSMS">
     <th mat-header-cell *matHeaderCellDef>Free SMS</th>
     <td mat-cell *matCellDef="let element">
-      <input matInput placeholder="Placeholder" value="{{ element.freeSMS }}" />
+      <input matInput placeholder="" value="{{ element.freeSMS }}" />
     </td>
   </ng-container>
 
-  <!-- Weight Column -->
-  <ng-container matColumnDef="weight">
+  <!-- lineBC Column -->
+
+  <ng-container matColumnDef="lineBC">
     <th mat-header-cell *matHeaderCellDef>LINE BC</th>
     <td mat-cell *matCellDef="let element">
-      <input matInput placeholder="Placeholder" value="{{ element.weight }}" />
+      <input matInput placeholder="" value="{{ element.lineBC }}" />
     </td>
   </ng-container>
 
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="symbol">
+  <!-- lineAOA Column -->
+  <ng-container matColumnDef="lineAOA">
     <th mat-header-cell *matHeaderCellDef>LINE AOA</th>
     <td mat-cell *matCellDef="let element">
-      <input matInput placeholder="Placeholder" value="{{ element.symbol }}" />
+      <input matInput placeholder="" value="{{ element.lineAOA }}" />
+    </td>
+  </ng-container>
+
+  <!-- push Column -->
+  <ng-container matColumnDef="push">
+    <th mat-header-cell *matHeaderCellDef>Home Bank PUSH</th>
+    <td mat-cell *matCellDef="let element">
+      <input matInput placeholder="" value="{{ element.push }}" />
+    </td>
+  </ng-container>
+
+  <!-- paidSMS Column -->
+  <ng-container matColumnDef="paidSMS">
+    <th mat-header-cell *matHeaderCellDef>Paid SMS</th>
+    <td mat-cell *matCellDef="let element">
+      <input matInput placeholder="" value="{{ element.paidSMS }}" />
+    </td>
+  </ng-container>
+
+  <!-- imessage Column -->
+  <ng-container matColumnDef="imessage">
+    <th mat-header-cell *matHeaderCellDef>iMessage</th>
+    <td mat-cell *matCellDef="let element">
+      <input matInput placeholder="" value="{{ element.imessage }}" />
+    </td>
+  </ng-container>
+
+  <!-- email Column -->
+  <ng-container matColumnDef="email">
+    <th mat-header-cell *matHeaderCellDef>Email</th>
+    <td mat-cell *matCellDef="let element">
+      <input matInput placeholder="" value="{{ element.email }}" />
     </td>
   </ng-container>
 
